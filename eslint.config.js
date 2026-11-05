@@ -159,6 +159,12 @@ export default [
     languageOptions: { globals: globals.browser },
   },
 
+  // El frontmatter se ejecuta en el servidor: globals de Node, sin APIs de navegador.
+  {
+    files: ['**/*.astro'],
+    languageOptions: { globals: globals.node },
+  },
+
   // Umbrales de revisión de docs/architecture.md: avisan, no bloquean el merge.
   {
     files: SCRIPTABLE,
