@@ -11,13 +11,9 @@
     class="pixel-image block h-[clamp(7rem,16vw,13rem)] w-full object-cover"
   />
 
-  <img
-    src="/images/buho.webp"
-    alt="Búho pixel art mirando a la ruta"
-    width="160"
-    height="160"
-    class="pixel-image absolute -bottom-1 left-2 z-10 h-[clamp(4rem,9vw,8rem)] w-auto"
-  />
+  <div class="absolute -bottom-1 left-2 z-10 w-[clamp(4.5rem,10vw,8rem)]">
+    <slot name="mascot" />
+  </div>
 
   <svg
     class="pointer-events-none absolute inset-x-0 bottom-6 hidden h-16 w-full text-accent-pink sm:block"

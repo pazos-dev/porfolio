@@ -14,11 +14,14 @@ type Props = {
   speed?: number;
   background?: 'night' | 'desk';
   className?: string;
+  /** Alto del lienzo. Por defecto, el tamaño grande de la página de verificación. */
+  height?: string;
 };
 
 export function OwlMascot({ baseUrl = '/buho', action = 'idle', actionKey = 0,
   followPointer = false, parallax = true, automatic = true,
-  paused = false, speed = 1, background = 'night', className }: Props) {
+  paused = false, speed = 1, background = 'night', className,
+  height = 'clamp(280px, 48vw, 540px)' }: Props) {
   const canvas = useRef<HTMLCanvasElement>(null);
   const player = useRef<OwlPlayer | null>(null);
   const [error, setError] = useState('');
@@ -40,7 +43,7 @@ export function OwlMascot({ baseUrl = '/buho', action = 'idle', actionKey = 0,
     <div className={className} style={{ position: 'relative', width: '100%' }}>
       <canvas ref={canvas} tabIndex={0} role="img"
         aria-label="Búho animado. Pulsa Intro o toca el escenario para saludar."
-        style={{ display: 'block', width: '100%', height: 'clamp(280px, 48vw, 540px)',
+        style={{ display: 'block', width: '100%', height,
           borderRadius: 20, touchAction: 'pan-y' }} />
       {error && <p role="alert">No se pudo cargar la animación. Comprueba la ruta baseUrl.</p>}
     </div>
