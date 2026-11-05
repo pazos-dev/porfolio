@@ -64,7 +64,9 @@ Reservar un componente `Mascota` y un lugar definido en el layout. La primera ve
 
 La versión articulada se construirá como un personaje único reutilizable. No habrá un SVG diferente para cada página. Para mover los ojos y las alas independientemente se necesitarán piezas reales; incrustar un PNG dentro de un SVG no crea articulaciones.
 
-No se fijan aún nombres definitivos de métodos ni una librería de animación. Esa decisión se toma al implementar el personaje, según las interacciones necesarias y las dependencias que ya tenga la web.
+El motor de animación ya está elegido: GSAP, con entrada única en `src/motion/gsap.ts` y respeto de
+`prefers-reduced-motion` mediante `gsap.matchMedia()`. Los nombres definitivos de los métodos del
+personaje siguen abiertos y se deciden al implementarlo, según las interacciones necesarias.
 
 ## Primer paso concreto
 

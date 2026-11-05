@@ -21,9 +21,10 @@ incidentalmente para adaptarla a estos documentos.
 
 ## Seleccionar skills
 
-Las skills viven en `.agents/skills/`: las nueve propias del proyecto y las siete oficiales de
-GreenSock para GSAP, registradas en `skills-lock.json`. Usar una sola copia como fuente activa y
-conservar sus referencias y metadatos. Consultar `README.md` para instalarlas o actualizarlas.
+Las skills viven en `.agents/skills/`: las nueve propias del proyecto, las siete oficiales de
+GreenSock para GSAP y las tres de SEO (técnico, AEO y SEO para IA), registradas en
+`skills-lock.json`. Usar una sola copia como fuente activa y conservar sus referencias y metadatos.
+Consultar `README.md` para instalarlas o actualizarlas.
 
 | Tarea | Skill |
 | --- | --- |

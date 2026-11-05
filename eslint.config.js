@@ -152,14 +152,13 @@ export default [
     ...jsxA11y.configs.recommended,
   },
 
-  // Los bloques <script> de las plantillas .astro corren en el navegador; el
-  // frontmatter se ejecuta en el servidor y no debe recibir globals de navegador.
+  // Los bloques <script> extraídos de .astro corren en el navegador.
   {
     files: ['**/*.astro/*.js', '**/*.astro/*.ts'],
     languageOptions: { globals: globals.browser },
   },
 
-  // El frontmatter se ejecuta en el servidor: globals de Node, sin APIs de navegador.
+  // El frontmatter de .astro se ejecuta en el servidor: globals de Node, sin APIs de navegador.
   {
     files: ['**/*.astro'],
     languageOptions: { globals: globals.node },
