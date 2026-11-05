@@ -24,14 +24,19 @@ estado: real | muestra
 situacion: publicado | en desarrollo | prototipo
 anio: 2026
 destacado: true | false
+rol: Qué parte hiciste
+duracion: 6 semanas | null
 stack: [Tecnología, Tecnología]
 captura: /images/proyectos/archivo.webp | null
+capturaAlt: Texto alternativo de la captura | null
+galeria: []
 demo: https://... | null
 repo: https://... | null
 ---
 ```
 
-Cuerpo: `## Intro`, `## El reto`, `## Mi aporte`.
+Cuerpo: `## Intro`, `## El reto`, `## Mi aporte`, `## Decisiones`, `## Resultado`. El bloque
+`## Notas` es opcional y no se publica.
 
 ## Proyectos
 
