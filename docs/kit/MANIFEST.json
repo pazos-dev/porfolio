@@ -1,0 +1,162 @@
+{
+  "skill_count": 9,
+  "file_count": 32,
+  "entries": [
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 6980,
+      "sha256": "27a0e2640237b432133e39c99cbcd58735e4c20280e889cd1c426d9242ebce63"
+    },
+    {
+      "path": "CONTENIDO.txt",
+      "size_bytes": 1091,
+      "sha256": "731120ef0ef094368ed5077a699dda230fd780a191688b51e3ab055aefa2a240"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5034,
+      "sha256": "d815f53df314cfb22b87209fb516b3b970287edb684d2a4384f0089a1ee1d49b"
+    },
+    {
+      "path": "VALIDACION.md",
+      "size_bytes": 1810,
+      "sha256": "9382bc17720e790386264ab94f0aced4f54c7f771a8a6ed0c307c81950a23eee"
+    },
+    {
+      "path": "docs/architecture.md",
+      "size_bytes": 7132,
+      "sha256": "6de43239544f29178764568a488089da47f7a0bf4929cde2359fe66e7cadb728"
+    },
+    {
+      "path": "docs/plan-desarrollo.md",
+      "size_bytes": 6775,
+      "sha256": "6fc6304961799e80392bec71bc4159262951512804549de1548b88d948e01f78"
+    },
+    {
+      "path": "docs/review-checklist.md",
+      "size_bytes": 1598,
+      "sha256": "2e7b04199f3ac47ec181f793159bbfcea5d2fc23dcf70010faa28fe61435b6c1"
+    },
+    {
+      "path": "docs/stack.md",
+      "size_bytes": 7084,
+      "sha256": "22db6590a1ac2e71a6dd201335f218a2820e231742f4c24dac71ba05857b9037"
+    },
+    {
+      "path": "docs/task-template.md",
+      "size_bytes": 1689,
+      "sha256": "040984cef91e0bc542705dee6e4e0d2de96b719baac94cc4bf74bb42719f84c8"
+    },
+    {
+      "path": "docs/validacion-anterior.md",
+      "size_bytes": 1584,
+      "sha256": "f93110a853aee480d66c6282bcbedcc3a94370be2cb79665e754618652c38b3b"
+    },
+    {
+      "path": "docs/validacion-stack.md",
+      "size_bytes": 1401,
+      "sha256": "52a08702cab88afa1577132b57c65cbe3c3fb4967d0b6f134c876de9ed7ec69c"
+    },
+    {
+      "path": "skills/astro-best-practices/SKILL.md",
+      "size_bytes": 4635,
+      "sha256": "8a0e3eee427d8f34fa9165f4b88eaecdc203183eff06ce74cc2c7ffcd0a3ad2b"
+    },
+    {
+      "path": "skills/astro-best-practices/agents/openai.yaml",
+      "size_bytes": 280,
+      "sha256": "f9612b9d93862c0af97eafa2736137218a3a5497b40d2c63a5d074e21df8834d"
+    },
+    {
+      "path": "skills/clean-code-architecture/SKILL.md",
+      "size_bytes": 5871,
+      "sha256": "5e3d81a709e438f94de431282f42ea91d53cd5c031557f29fc6be78368cfbcdd"
+    },
+    {
+      "path": "skills/clean-code-architecture/agents/openai.yaml",
+      "size_bytes": 287,
+      "sha256": "431ebedf902e8d295ceccffbd687c9014822afc73a00e3d5c5d6c5e241300430"
+    },
+    {
+      "path": "skills/clean-code-architecture/references/design-decisions.md",
+      "size_bytes": 3530,
+      "sha256": "ef9ac61fb690e9b06a71bb4b443cfa275127a0e8d7f701dd77a6ed75e8c78d5f"
+    },
+    {
+      "path": "skills/owl-animation/SKILL.md",
+      "size_bytes": 4519,
+      "sha256": "19e37ae9dd1eec7a7f6a01e64085428906e7fbdc86c3130fd93093f2d93f3f7f"
+    },
+    {
+      "path": "skills/owl-animation/agents/openai.yaml",
+      "size_bytes": 279,
+      "sha256": "6e44575e786834fc6b1a1b5a118c06277a0c1c752d1b5a12023d0ce4b8ec63fa"
+    },
+    {
+      "path": "skills/owl-animation/references/state-control.md",
+      "size_bytes": 2106,
+      "sha256": "09328c1743dd23c8cad2e0b6dc2c44d019b3729645d6f3a3382ea92fe70422be"
+    },
+    {
+      "path": "skills/portfolio-assets/SKILL.md",
+      "size_bytes": 3265,
+      "sha256": "284dba8ea55315f2e59b2536c9934edbc3ca18f8fa9eb20d93bd7332448dc6a6"
+    },
+    {
+      "path": "skills/portfolio-assets/agents/openai.yaml",
+      "size_bytes": 273,
+      "sha256": "8bb750f72fdc7ca668229055c389b6ccd1068b6ab4e612c7ec48df1b3193cdaf"
+    },
+    {
+      "path": "skills/portfolio-feature/SKILL.md",
+      "size_bytes": 3260,
+      "sha256": "cc6e56de1e87846e754934e343909e22dc03aab822d8a35108c5e440975f40a4"
+    },
+    {
+      "path": "skills/portfolio-feature/agents/openai.yaml",
+      "size_bytes": 288,
+      "sha256": "1763c97edb40c7bd3bda59129477f307ee8c6a566f2ea41df2110bc2348cd0a4"
+    },
+    {
+      "path": "skills/portfolio-review/SKILL.md",
+      "size_bytes": 3096,
+      "sha256": "796f618c625c3f22a37c31645ce120cd4fd6949d94602a9485786e3cd5318e50"
+    },
+    {
+      "path": "skills/portfolio-review/agents/openai.yaml",
+      "size_bytes": 259,
+      "sha256": "ae37cec63ad26d4a249908134583960dcc07fb45bc1e9845bf2e01f7c423f370"
+    },
+    {
+      "path": "skills/portfolio-ui/SKILL.md",
+      "size_bytes": 3099,
+      "sha256": "f17be1ebc5cdbfc85d7e545aab9c7f8c68b7c6c7d21fbb78992d22333950baa1"
+    },
+    {
+      "path": "skills/portfolio-ui/agents/openai.yaml",
+      "size_bytes": 277,
+      "sha256": "9961a6c306983656f81bd5906196539b016c2e73fafe96da68c25300bb9e3999"
+    },
+    {
+      "path": "skills/react-component-patterns/SKILL.md",
+      "size_bytes": 4814,
+      "sha256": "1c3aa6e6616015b8ed1556cd18847e5092d6d19b4f3246b3e86412a31421ff00"
+    },
+    {
+      "path": "skills/react-component-patterns/agents/openai.yaml",
+      "size_bytes": 301,
+      "sha256": "cc069fd9d057ca1a3adb761725a8ddddf7b5fc274f253b5e55208d5e70317ae7"
+    },
+    {
+      "path": "skills/tailwind-design-system/SKILL.md",
+      "size_bytes": 4350,
+      "sha256": "ef831d56f97a963253b53d1d4a614b740a73a9eced98b49232103495a42bc8f0"
+    },
+    {
+      "path": "skills/tailwind-design-system/agents/openai.yaml",
+      "size_bytes": 287,
+      "sha256": "30caef2df121dd66f18f95962ebdcdbe2aaa95ca7273acbdf12076dc7e83b368"
+    }
+  ],
+  "note": "MANIFEST.json se excluye de su propia huella para evitar autorreferencia."
+}
