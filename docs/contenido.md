@@ -4,13 +4,12 @@ Fuente de textos del sitio. Lo que está entre comillas se copia **literal** al 
 reescribe al implementar.
 
 Estado: textos de interfaz copiados del diseño de referencia (`../exampleDesing/`), datos
-personales tomados del CV de Luis (5/11/2026) y **proyectos provisionales** a la espera de los
-reales.
+personales tomados del CV de Luis y del repositorio `pazos-dev/System-Tech` (5/11/2026).
 
 Marcas de este documento:
 
-- `PROVISIONAL`: texto de relleno para construir la interfaz. **No se publica.**
 - `PENDIENTE`: falta el dato y bloquea la publicación.
+- `borrador`: texto propuesto, pendiente de que Luis lo confirme o lo reescriba.
 
 ## 1. Inicio (portada)
 
@@ -109,46 +108,30 @@ Textos de interfaz (literales del diseño):
 | Botón de código | `Código` |
 | Etiqueta de muestra | `Contenido de muestra` (se quita al publicar) |
 
-### PROVISIONAL · Proyecto 01 — Sistema de control de novedades
+### Proyecto 01 — System-Tech
 
+- **Estado:** en desarrollo, versión `0.19.1`; repositorio **privado**.
 - **Tipo:** `Aplicación web`
-- **Intro (provisional):** Digitalización y centralización de las incidencias operativas de un
-  aeropuerto, que antes se seguían en papel y planillas sueltas.
-- **El reto (provisional):** Unificar el registro de novedades para que el equipo encontrara el
-  estado de cada incidencia sin depender de una persona.
-- **Mi aporte (provisional):** Diseñé el modelo de datos y la lógica de negocio, y construí la
-  interfaz de seguimiento con estados por área.
-- **Tecnologías (provisional):** React, TypeScript, Node.js, Express, PostgreSQL, Git.
-- **Capturas:** `public/images/proyectos/proyecto-01-tareas.webp`
-- **Enlaces:** `PENDIENTE`
+- **Qué es:** sistema de gestión para un taller de reparación de celulares: ingreso de equipos,
+  estado de las reparaciones y catálogo, con API y panel web.
+- **El reto (borrador, confirmar):** sacar el taller de las planillas y los mensajes sueltos, y que
+  cada reparación tenga un estado consultable por quien la atiende.
+- **Mi aporte (borrador, confirmar):** arquitectura del monorepo, modelo de datos en PostgreSQL,
+  API, panel y las reglas de negocio del taller.
+- **Tecnologías (tomadas del repositorio):**
+  - API: NestJS · PostgreSQL · Kysely · Zod · pino · bcrypt · rate limiting · Vitest
+  - Panel: Astro · React 19 · Ant Design · TanStack Query · Zustand · React Hook Form · Zod ·
+    Recharts · dnd-kit · Playwright · Vitest
+  - Infraestructura: pnpm workspaces + Turborepo · Docker y docker-compose · migraciones · backup
+    y restore
+- **Capturas:** `PENDIENTE`
+- **Enlaces:** demo → `PENDIENTE` URL. Decisión (5/11/2026): el repositorio sigue privado y el
+  botón `Código` no se muestra; en su lugar va la demo cuando esté desplegada.
 
-### PROVISIONAL · Proyecto 02 — Inventario y facturación
+### Proyectos 02 y 03
 
-- **Tipo:** `Aplicación web`
-- **Intro (provisional):** Sistema de gestión de inventarios y facturación para reemplazar el
-  control administrativo manual.
-- **El reto (provisional):** Que el área administrativa emitiera comprobantes y consultara stock sin
-  duplicar planillas.
-- **Mi aporte (provisional):** Modelé el inventario, la facturación y los permisos, y traduje el
-  circuito administrativo a reglas del sistema.
-- **Tecnologías (provisional):** Node.js, Express, PostgreSQL, JavaScript.
-- **Capturas:** `public/images/proyectos/proyecto-02-visible-parcial.webp`
-- **Enlaces:** `PENDIENTE`
-
-### PROVISIONAL · Proyecto 03 — Sitio institucional
-
-- **Tipo:** `Sitio web`
-- **Intro (provisional):** Mejora de la web institucional de una empresa siderúrgica.
-- **El reto (provisional):** Actualizar la presencia pública con contenido que el área pudiera
-  mantener sin depender del equipo técnico.
-- **Mi aporte (provisional):** Desarrollé componentes y funcionalidades y ajusté la estructura de
-  las páginas existentes.
-- **Tecnologías (provisional):** JavaScript, HTML, CSS.
-- **Capturas:** `public/images/proyectos/miniatura-proyecto-03.webp`
-- **Enlaces:** `PENDIENTE`
-
-Los tres están construidos sobre puestos reales del CV, pero **el detalle es de relleno**: los
-proyectos reales (nombre, alcance, capturas y enlaces) los aporta Luis y reemplazan estas fichas.
+No se publican. Decisión (5/11/2026): la sección muestra **un solo proyecto real**, System-Tech;
+los puestos del CV no se usan como relleno. Cuando haya más proyectos reales se suman acá.
 
 ## 4. Archivo de proyectos
 
@@ -167,8 +150,9 @@ proyectos reales (nombre, alcance, capturas y enlaces) los aporta Luis y reempla
 
 Tipos que usa el diseño: `Aplicación web`, `Sitio web`, `Herramienta`, `Experimento`.
 
-La maqueta dibuja seis filas; el plan pide dos o tres. Con los provisionales quedan **tres**, que es
-lo que se puede sostener con contenido real.
+La maqueta dibuja seis filas y el plan pide dos o tres. Hoy hay **un** proyecto real, así que el
+archivo se implementa cuando exista al menos un segundo proyecto; con uno solo repite la sección de
+destacados.
 
 ## 5. Contacto (03 / Contacto)
 
@@ -194,15 +178,16 @@ Datos de contacto publicables:
 - Teléfono: **no se publica**. Queda fuera del sitio para no exponerlo a scraping; si hace falta,
   va dentro de un CV descargable.
 
-El formulario **no se publica** hasta que exista un servicio de envío real con estados de éxito y
-error. Hasta entonces, enlace de correo.
+Decisión (5/11/2026): la primera versión usa `mailto:luis.pazos.dev@gmail.com`. El formulario queda
+definido en este documento pero **no se implementa** hasta que exista un servicio de envío real con
+estados de éxito y error.
 
 ## 6. Elementos comunes
 
 | Elemento | Texto literal |
 | --- | --- |
 | Marca | `{Luis Pazos}` con pluma |
-| Estado | `DISPONIBLE` |
+| Estado | `DISPONIBLE` (decisión 5/11/2026: se publica) |
 | Navegación | `[Proyectos]` `[Sobre mí]` `[Contacto]` (el inicio es el logo) |
 | Pie | `{Luis Pazos}` · `Código, curiosidad y pixel art.` |
 | Volver | `Volver arriba` |
@@ -210,11 +195,10 @@ error. Hasta entonces, enlace de correo.
 
 ## 7. Pendientes antes de publicar
 
-- [ ] Proyectos reales: nombre, tipo, reto, aporte, capturas y enlaces (reemplazan los tres
-      provisionales).
-- [ ] Servicio de envío del formulario o enlace de correo.
+- [ ] Capturas reales de System-Tech.
+- [ ] URL de la demo de System-Tech.
+- [ ] Confirmar el texto de `El reto` y `Mi aporte` de System-Tech (hoy es borrador).
 - [ ] Título y descripción para buscadores de cada página.
-- [ ] ¿Se publica el badge `DISPONIBLE`?
 - [ ] Quitar las etiquetas de maqueta: `Contenido de muestra`, `Ejemplos visuales`,
       `Vista de ejemplo`.
 
