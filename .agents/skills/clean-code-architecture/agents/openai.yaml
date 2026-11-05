@@ -1,0 +1,4 @@
+interface:
+  display_name: "Código limpio y arquitectura"
+  short_description: "Escribir código reutilizable con límites claros"
+  default_prompt: "Usa $clean-code-architecture para implementar este cambio reutilizando lo existente y justificando los límites y patrones necesarios."

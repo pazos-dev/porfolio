@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+.pnpm-store/
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db
+*.log
+
+# Enlaces duplicados que crea el CLI de skills; la copia activa es .agents/skills/.
+.claude/
+.hermes/
+
+# Artefactos del servidor de Playwright usado en verificación manual.
+.playwright-mcp/

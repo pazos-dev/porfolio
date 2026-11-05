@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buenas prácticas de Tailwind"
+  short_description: "Aplicar tokens, variantes y estilos adaptables"
+  default_prompt: "Usa $tailwind-design-system para implementar estos estilos con tokens compartidos, clases detectables, variantes simples y accesibilidad."

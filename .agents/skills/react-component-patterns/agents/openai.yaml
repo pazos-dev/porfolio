@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buenas prácticas de React"
+  short_description: "Diseñar componentes, estado y hooks reutilizables"
+  default_prompt: "Usa $react-component-patterns para implementar este componente con estado mínimo, composición, efectos correctos y verificación del comportamiento."

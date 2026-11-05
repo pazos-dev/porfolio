@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animar la mascota del portfolio"
+  short_description: "Controlar estados y movimientos del búho web"
+  default_prompt: "Usa $owl-animation para añadir esta interacción al búho manteniendo control de estados, accesibilidad y limpieza de recursos."

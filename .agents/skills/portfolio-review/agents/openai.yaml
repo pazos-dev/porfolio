@@ -1,0 +1,4 @@
+interface:
+  display_name: "Revisar cambios del portfolio"
+  short_description: "Detectar fallos, duplicación y límites rotos"
+  default_prompt: "Usa $portfolio-review para revisar este cambio y priorizar problemas concretos con evidencia y verificación."

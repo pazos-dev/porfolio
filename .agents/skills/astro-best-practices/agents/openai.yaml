@@ -1,0 +1,4 @@
+interface:
+  display_name: "Buenas prácticas de Astro"
+  short_description: "Elegir componentes, contenido e hidratación en Astro"
+  default_prompt: "Usa $astro-best-practices para implementar este cambio de Astro respetando contenido, renderizado e hidratación del proyecto."

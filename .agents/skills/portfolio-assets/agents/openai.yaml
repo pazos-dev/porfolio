@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preparar recursos gráficos"
+  short_description: "Optimizar imágenes, SVG y favicon del portfolio"
+  default_prompt: "Usa $portfolio-assets para preparar estos recursos manteniendo originales, calidad visual y tamaños adecuados para la web."

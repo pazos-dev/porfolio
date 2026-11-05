@@ -1,0 +1,573 @@
+[
+  {
+    "file": "images/escritorio.png",
+    "width": 1578,
+    "height": 970,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho.png",
+    "width": 1351,
+    "height": 1136,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/paisaje-inferior.png",
+    "width": 2193,
+    "height": 580,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "svg/logo-horizontal.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/logo-mark.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "favicons/favicon.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/braces.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/code.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/external-link.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/arrow-down.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/status.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/target.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/sparkle.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/menu.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/arrow-up-right.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/close.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/folder.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/chat.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "favicons/android-chrome-192x192.png",
+    "width": 192,
+    "height": 192,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "favicons/android-chrome-512x512.png",
+    "width": 512,
+    "height": 512,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "favicons/apple-touch-icon.png",
+    "width": 180,
+    "height": 180,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "favicons/favicon-16x16.png",
+    "width": 16,
+    "height": 16,
+    "transparent": false,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "favicons/favicon-32x32.png",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "favicons/favicon-48x48.png",
+    "width": 48,
+    "height": 48,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/bosque-luna.png",
+    "width": 1821,
+    "height": 864,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/bosque-luna.webp",
+    "width": 1821,
+    "height": 864,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-asomado.png",
+    "width": 1536,
+    "height": 1024,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-asomado.webp",
+    "width": 1536,
+    "height": 1024,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-buzon.png",
+    "width": 1343,
+    "height": 1171,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-buzon.webp",
+    "width": 1343,
+    "height": 1171,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-libro-farol.png",
+    "width": 1500,
+    "height": 1049,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho-libro-farol.webp",
+    "width": 1500,
+    "height": 1049,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/buho.webp",
+    "width": 1351,
+    "height": 1136,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/escritorio.webp",
+    "width": 1578,
+    "height": 970,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/paisaje-inferior.webp",
+    "width": 2193,
+    "height": 580,
+    "transparent": true,
+    "origin": "Edición generativa o rasterización de vector; ver README."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-01.png",
+    "width": 182,
+    "height": 64,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-01.webp",
+    "width": 182,
+    "height": 64,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-02.png",
+    "width": 182,
+    "height": 65,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-02.webp",
+    "width": 182,
+    "height": 65,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-03.png",
+    "width": 182,
+    "height": 65,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-03.webp",
+    "width": 182,
+    "height": 65,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-04.png",
+    "width": 182,
+    "height": 66,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-04.webp",
+    "width": 182,
+    "height": 66,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-05.png",
+    "width": 182,
+    "height": 70,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-05.webp",
+    "width": 182,
+    "height": 70,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-06.png",
+    "width": 182,
+    "height": 69,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/miniatura-proyecto-06.webp",
+    "width": 182,
+    "height": 69,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/paisaje-proyecto-02-visible-parcial.png",
+    "width": 556,
+    "height": 132,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/paisaje-proyecto-02-visible-parcial.webp",
+    "width": 556,
+    "height": 132,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/proyecto-01-tareas.png",
+    "width": 938,
+    "height": 371,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/proyecto-01-tareas.webp",
+    "width": 938,
+    "height": 371,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/proyecto-02-visible-parcial.png",
+    "width": 899,
+    "height": 174,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "images/proyectos/proyecto-02-visible-parcial.webp",
+    "width": 899,
+    "height": 174,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/buho-original.png",
+    "width": 158,
+    "height": 148,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/escritorio-original.png",
+    "width": 914,
+    "height": 668,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/franja-inferior-original.png",
+    "width": 1536,
+    "height": 232,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/logo-original.png",
+    "width": 83,
+    "height": 63,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/adorno-divisor-proyectos-original.png",
+    "width": 1081,
+    "height": 123,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/borde-derecho-sobre-mi-original.png",
+    "width": 84,
+    "height": 702,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/borde-inferior-archivo-original.png",
+    "width": 1536,
+    "height": 112,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/borde-inferior-contacto-original.png",
+    "width": 1010,
+    "height": 97,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/borde-inferior-sobre-mi-original.png",
+    "width": 1536,
+    "height": 99,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/borde-izquierdo-archivo-original.png",
+    "width": 119,
+    "height": 540,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/bosque-luna-original.png",
+    "width": 417,
+    "height": 208,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/buho-archivo-original.png",
+    "width": 123,
+    "height": 122,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/buho-asomado-original.png",
+    "width": 167,
+    "height": 99,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/buho-buzon-original.png",
+    "width": 540,
+    "height": 444,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "originales/nuevos/buho-libro-farol-original.png",
+    "width": 416,
+    "height": 330,
+    "transparent": false,
+    "origin": "Recorte directo de la captura."
+  },
+  {
+    "file": "svg/decoraciones/destellos.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/estrella-pixel.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/marco-ventana.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/pluma.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/ruta-horizontal.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/ruta-vertical.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/decoraciones/textura-puntos.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/arrow-left.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/arrow-right.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/arrow-up.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/book-open.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/briefcase.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/building.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/calendar.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/check-square.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/check.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/chevron-up.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/download.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/file-text.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/github.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/graduation-cap.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/heart.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/home.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/image.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/mail.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/maximize.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/minus.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/pin.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/plus.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/school.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/search.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/send.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/square.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/user.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  },
+  {
+    "file": "svg/icons/window-minimize.svg",
+    "origin": "Vector editable; recreación, excepto la marca GitHub."
+  }
+]

@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/*
+ * Tokens visuales del portfolio pixel art.
+ * Origen: design/recursos/styles-referencia.css + docs/stack.md.
+ * Mantener una sola fuente: no repetir estos hex en componentes.
+ */
+@theme {
+  --color-base: #080d10;
+  --color-ink: #f4f4ef;
+  --color-accent-cyan: #00e5ed;
+  --color-accent-purple: #a855f7;
+  --color-accent-pink: #dc83ec;
+}
+
+/* Los SVG de public/svg/icons usan currentColor al insertarse en línea. */
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-base);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  /* Máscara para colorear iconos SVG cargados con <img>. */
+  .icon-mask {
+    display: inline-block;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    background-color: currentColor;
+    mask: var(--icon) center / contain no-repeat;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

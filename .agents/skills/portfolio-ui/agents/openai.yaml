@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diseñar la interfaz del portfolio"
+  short_description: "Mantener diseño, componentes y accesibilidad"
+  default_prompt: "Usa $portfolio-ui para implementar esta sección siguiendo las referencias del portfolio y adaptándola a móvil y teclado."

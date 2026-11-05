@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" viewBox="0 0 104 96" fill="none"><ns0:title>Luis Pazos — pluma pixel art</ns0:title><ns0:defs><ns0:linearGradient id="feather" x1="26" y1="78" x2="77" y2="10" gradientUnits="userSpaceOnUse"><ns0:stop stop-color="#00e5ed" /><ns0:stop offset=".45" stop-color="#a855f7" /><ns0:stop offset="1" stop-color="#e287ef" /></ns0:linearGradient></ns0:defs>
+<ns0:g shape-rendering="crispEdges">
+<ns0:path d="M28 71V59h4V49h5V40h6v-9h7v-6h8v-6h10v-5h9v-5h6v12h-4v10h-5v9h-6v9h-7v8h-8v6H42v5h-8v4z" fill="url(#feather)" />
+<ns0:path d="M35 65V53h4V43h4v14l8-9V35h4v9l8-9V25h4v5l9-11-6 14-7 7 10-2v4l-15 4-8 9 13-3-4 6-16 4-9 11z" fill="#4c267a" />
+<ns0:path d="M20 84h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h3v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v-5z" fill="#9ef5ff" />
+</ns0:g></ns0:svg>

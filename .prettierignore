@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.astro/
+pnpm-lock.yaml
+
+# Assets servidos y material de origen: no se formatean.
+public/
+design/
+
+# Documentación y skills del kit: autoría externa, se conservan tal cual.
+docs/
+.agents/
+.atl/
+AGENTS.md
+
+# Reproductor y componente entregados del búho: se conservan tal como se distribuyeron.
+src/features/mascot/

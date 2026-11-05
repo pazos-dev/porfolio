@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implementar funcionalidades"
+  short_description: "Desarrollar funcionalidades completas del portfolio"
+  default_prompt: "Usa $portfolio-feature para implementar esta funcionalidad del portfolio con criterios de aceptación y reutilización de lo existente."

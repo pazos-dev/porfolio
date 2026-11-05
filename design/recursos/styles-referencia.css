@@ -1,0 +1,6 @@
+/* Colores de integración aproximados a la captura. */
+:root { --bg: #080d10; --cyan: #00e5ed; --purple: #a855f7; --pink: #dc83ec; --text: #f4f4ef; }
+.pixel-image { display: block; max-width: 100%; height: auto; }
+.pixel-icon { width: 24px; height: 24px; color: var(--cyan); }
+/* Para colorear iconos SVG cargados con <img>, úsese máscara: */
+.icon-mask { display:inline-block; width:24px; height:24px; background:currentColor; mask: var(--icon) center/contain no-repeat; }

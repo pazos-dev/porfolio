@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0d15"><title>Búho animado · Luis Pazos</title>
+<style>
+:root{color-scheme:dark;--bg:#0a0d15;--panel:#111522;--line:#272a40;--text:#f4f1fc;--muted:#a5a7c2;--pink:#e58af6;--cyan:#00e5ed}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 0,#21113255,transparent 55%),var(--bg);color:var(--text);font:15px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}button,input{font:inherit}button,a,input{touch-action:manipulation}button,a{ -webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,canvas:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}button:disabled{opacity:.4;cursor:wait}header,main,footer{max-width:1240px;margin:auto;padding-left:28px;padding-right:28px}header{height:90px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d77ce044}.brand{display:flex;align-items:center;gap:14px;font-size:17px;font-weight:700}.brand svg{width:44px;height:44px}.brand strong{color:var(--pink)}.brand b{color:var(--cyan)}.tag{font-size:11px;letter-spacing:1px;color:var(--cyan);display:flex;gap:8px;align-items:center}.dot{display:inline-block;width:6px;height:6px;background:var(--cyan);box-shadow:0 0 14px #00e5ed88}main{padding-top:40px}.eyebrow{font-size:11px;color:var(--cyan);letter-spacing:2px}h1{font:700 clamp(28px,4vw,44px)/1.2 ui-monospace,monospace;letter-spacing:-1.6px;margin:14px 0 10px}h1 span{color:var(--pink)}.intro{color:var(--muted);margin:0 0 28px;max-width:760px}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:20px;align-items:stretch}.stage-wrap{min-width:0;border:1px solid #55406c;border-radius:14px;overflow:hidden;background:#090d1b;position:relative}.stage-top{height:47px;border-bottom:1px solid #38304f;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:#111222;color:var(--muted);font-size:11px;gap:8px}.live{display:flex;align-items:center;gap:7px;color:var(--pink)}.stage{display:block;width:100%;height:460px;outline-offset:-4px!important;touch-action:pan-y;cursor:crosshair}.stage-bottom{display:flex;align-items:center;justify-content:space-between;gap:12px;background:#0d1120;padding:12px 16px;border-top:1px solid #24283d;color:var(--muted);font-size:11px}.stage-bottom .key{color:#dfc9f5}.controls{border:1px solid var(--line);border-radius:14px;background:linear-gradient(130deg,#171529,#101522);padding:22px;display:flex;flex-direction:column}.small-label{font-size:10px;letter-spacing:1.6px;color:var(--muted);margin:0 0 12px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}.action{padding:12px 8px;border:1px solid #3a3354;background:#211b32;border-radius:7px;color:#f0e8fb;text-align:center;font-size:12px;transition:background .15s,border-color .15s}.action:hover{border-color:var(--pink);background:#332142}.action[aria-pressed=true]{border-color:var(--cyan);background:#0d303a;color:var(--cyan)}.action.wide{grid-column:1/-1}.rule{height:1px;background:var(--line);margin:22px 0}.setting{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 16px;font-size:12px;cursor:pointer}.setting input[type=checkbox]{appearance:none;width:32px;height:18px;background:#29273a;border:1px solid #4e4566;border-radius:20px;position:relative;margin:0;cursor:pointer;flex-shrink:0}.setting input[type=checkbox]:after{content:'';position:absolute;left:3px;top:3px;width:10px;height:10px;background:#9e93af;border-radius:50%;transition:transform .2s}.setting input[type=checkbox]:checked{background:#0c4149;border-color:#00bfc7}.setting input[type=checkbox]:checked:after{transform:translateX(14px);background:var(--cyan)}.range-label{font-size:12px;display:flex;justify-content:space-between}.range-label output{color:var(--cyan)}input[type=range]{width:100%;accent-color:var(--cyan);margin:12px 0 22px}.pause{margin-top:auto;border:1px solid var(--cyan);color:var(--cyan);background:#00e5ed08;border-radius:7px;padding:11px;font-size:12px}.pause:hover{background:#00e5ed15}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:18px 0 34px}.tabs{display:flex;gap:8px}.tabs button{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font-size:11px}.tabs button[aria-pressed=true]{border-color:#b66cd7;color:var(--pink);background:#b66cd70b}.hint{color:var(--muted);font-size:11px;text-align:right}h2{font-size:18px;letter-spacing:-.4px;margin:0 0 5px}.sub{font-size:12px;color:var(--muted);margin:0 0 20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#101421;border:1px solid var(--line);border-radius:12px;overflow:hidden}.card-media{height:160px;background:radial-gradient(ellipse,#32205355,transparent 70%),#0b0f1c;display:flex;align-items:center;justify-content:center}.card img{height:152px;width:152px;object-fit:contain}.card-body{padding:16px;border-top:1px solid var(--line)}.card-body h3{font-size:13px;margin:0 0 4px}.card-body p{color:var(--muted);font-size:10px;margin:0 0 14px}.downloads{display:flex;gap:8px;flex-wrap:wrap}.downloads a{color:var(--cyan);border:1px solid #27424b;border-radius:5px;font-size:10px;text-decoration:none;padding:6px 9px}.downloads a:hover{background:#00e5ed12}.note{font-size:11px;color:var(--muted);margin:20px 0 0;max-width:850px}.error{color:#ffacbd;padding:12px;border:1px solid #884d61;margin:12px 0}.reduced{color:#eccb83;font-size:11px;margin:12px 0}.hidden{display:none}footer{display:flex;justify-content:space-between;gap:16px;padding-top:30px;padding-bottom:28px;color:#8588a7;font-size:10px;margin-top:34px;border-top:1px solid var(--line)}
+@media(max-width:900px){.workspace{grid-template-columns:minmax(0,1fr) 260px}.controls{padding:16px}.stage{height:430px}.tag{font-size:9px}.brand{font-size:15px}}
+@media(max-width:680px){header,main,footer{padding-left:18px;padding-right:18px}header{height:74px}.tag{display:none}main{padding-top:28px}.workspace{grid-template-columns:1fr}.stage{height:360px}.controls{padding:18px}.actions{grid-template-columns:repeat(3,1fr)}.action.wide{grid-column:auto}.setting{margin-bottom:14px}.rule{margin:16px 0}.cards{grid-template-columns:1fr}.card{display:grid;grid-template-columns:130px 1fr}.card-media{height:150px}.card img{width:126px;height:126px}.card-body{border-top:0;border-left:1px solid var(--line);display:flex;flex-direction:column;justify-content:center}.toolbar{align-items:flex-start}.hint{max-width:150px;font-size:10px}.stage-bottom{font-size:9px}.stage-top{font-size:10px}.intro{font-size:12px}footer{flex-direction:column}.pause{margin-top:2px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important}}
+</style></head><body>
+<header><div class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 96" fill="none"><title>Luis Pazos — pluma pixel art</title><defs><linearGradient id="feather" x1="26" y1="78" x2="77" y2="10" gradientUnits="userSpaceOnUse"><stop stop-color="#00e5ed"/><stop offset=".45" stop-color="#a855f7"/><stop offset="1" stop-color="#e287ef"/></linearGradient></defs>
+<g shape-rendering="crispEdges">
+<path d="M15 43h5v-5h5v5h-5v5h-5v5h5v5h5v5h-5v-5h-5v-5h-5v-5h5zm65-5h5v5h5v5h5v5h-5v5h-5v5h-5v-5h5v-5h5v-5h-5v-5h-5z" fill="#00e5ed"/>
+<path d="M28 71V59h4V49h5V40h6v-9h7v-6h8v-6h10v-5h9v-5h6v12h-4v10h-5v9h-6v9h-7v8h-8v6H42v5h-8v4z" fill="url(#feather)"/>
+<path d="M35 65V53h4V43h4v14l8-9V35h4v9l8-9V25h4v5l9-11-6 14-7 7 10-2v4l-15 4-8 9 13-3-4 6-16 4-9 11z" fill="#4c267a"/>
+<path d="M20 84h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h4v-5h3v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v5h-4v-5z" fill="#9ef5ff"/>
+</g></svg><span><b>{</b><strong>Luis Pazos</strong><b>}</b></span></div><div class="tag"><span class="dot"></span> TU MASCOTA, A TU RITMO</div></header>
+<main><div class="eyebrow">01 / ANIMACIONES</div><h1>Tu búho, <span>con vida.</span></h1><p class="intro">Mueve el cursor, toca el escenario o elige una acción. Él pone las alas.</p>
+<div id="error" class="error hidden" role="alert"></div><p id="reduced" class="reduced hidden">Tu dispositivo tiene activado reducir movimiento. La escena se mantiene quieta.</p>
+<div class="workspace"><section class="stage-wrap" aria-label="Escenario interactivo"><div class="stage-top"><span id="scene-label">escenario / bosque nocturno</span><span class="live"><span class="dot"></span><span id="state" aria-live="polite">Cargando</span></span></div><canvas class="stage" id="stage" tabindex="0" role="img" aria-label="Búho animado sobre un paisaje nocturno. Pulsa Intro o toca para saludar."></canvas><div class="stage-bottom"><span id="instruction">Mueve el puntero para inclinar el búho.</span><span class="key">Clic / Intro → saludar</span></div></section>
+<aside class="controls" aria-label="Controles de animación"><p class="small-label">ELIGE UNA ACCIÓN</p><div class="actions"><button class="action" data-action="blink" disabled>Parpadear</button><button class="action" data-action="wave" disabled>Saludar</button><button class="action" data-action="flap" disabled>Aletear</button><button class="action" data-action="jump" disabled>Saltar</button><button class="action" data-action="celebrate" disabled>Celebrar ✦</button><button class="action" data-action="idle" disabled>Reposo</button></div><div class="rule"></div><label class="setting" for="follow">Seguir el puntero<input id="follow" type="checkbox"></label><label class="setting" for="depth">Profundidad del fondo<input id="depth" type="checkbox" checked></label><label class="setting" for="auto">Animación automática<input id="auto" type="checkbox" checked></label><div class="range-label"><label for="speed">Velocidad</label><output for="speed" id="speed-value">1.0×</output></div><input id="speed" type="range" min="0.5" max="2" step="0.1" value="1"><button id="pause" class="pause" aria-pressed="false" disabled>Ⅱ Pausar</button></aside></div>
+<div class="toolbar"><div class="tabs" role="group" aria-label="Fondo"><button data-background="night" aria-pressed="true">Bosque</button><button data-background="desk" aria-pressed="false">Escritorio</button></div><span class="hint">En móvil, toca y prueba los botones.</span></div>
+<h2>Tres gestos para llevar a tu web.</h2><p class="sub">Las animaciones y los fotogramas están incluidos en el paquete.</p><div class="cards"><article class="card"><div class="card-media"><img src="assets/previews/parpadeo.webp" alt="Animación de parpadeo" width="152" height="152"></div><div class="card-body"><h3>Un pequeño parpadeo</h3><p>6 fotogramas · Fondo transparente</p><div class="downloads"><a download="parpadeo.gif" href="assets/previews/parpadeo.gif">GIF ↓</a><a download="parpadeo-sprite.png" href="assets/sprites/parpadeo.png">Sprite PNG ↓</a></div></div></article><article class="card"><div class="card-media"><img src="assets/previews/saludo.webp" alt="Animación de saludo" width="152" height="152"></div><div class="card-body"><h3>Un saludo con alas</h3><p>6 fotogramas · Fondo transparente</p><div class="downloads"><a download="saludo.gif" href="assets/previews/saludo.gif">GIF ↓</a><a download="saludo-sprite.png" href="assets/sprites/saludo.png">Sprite PNG ↓</a></div></div></article><article class="card"><div class="card-media"><img src="assets/previews/aleteo.webp" alt="Animación de aleteo" width="152" height="152"></div><div class="card-body"><h3>Un poco de energía</h3><p>6 fotogramas · Fondo transparente</p><div class="downloads"><a download="aleteo.gif" href="assets/previews/aleteo.gif">GIF ↓</a><a download="aleteo-sprite.png" href="assets/sprites/aleteo.png">Sprite PNG ↓</a></div></div></article></div><p class="note">El seguimiento mueve e inclina el personaje completo. Las poses conservan el estilo del búho, con pequeñas variaciones entre fotogramas.</p></main><footer><span>{Luis Pazos} · Código, curiosidad y pixel art.</span><span>Sin conexión · Sin instalaciones</span></footer>
+<script>/** Owl animation controller. No dependencies, network requests, or tracking. */
+const OWL_ANIMATIONS = {
+  blink: { key: 'parpadeo', durations: [100, 65, 85, 65, 65, 180] },
+  wave: { key: 'saludo', durations: [120, 100, 180, 160, 110, 160] },
+  flap: { key: 'aleteo', durations: [100, 80, 100, 100, 80, 120] },
+};
+
+class OwlPlayer {
+  constructor(canvas, options = {}) {
+    this.canvas = canvas;
+    this.ctx = canvas.getContext('2d');
+    if (!this.ctx) throw new Error('Canvas 2D no disponible.');
+    this.options = { baseUrl: '.', followPointer: false, parallax: true, automatic: true,
+      background: 'night', speed: 1, size: 280, ...options };
+    this.assets = {}; this.ready = false; this.paused = false; this.destroyed = false;
+    this.action = 'idle'; this.elapsed = 0; this.time = 0; this.lastTime = 0;
+    this.pointer = { x: 0, y: 0 }; this.smooth = { x: 0, y: 0 }; this.pointerInside = false;
+    this.nextBlink = 2400; this.nextWave = 12000;
+    this.motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
+    this.reduced = this.motionQuery.matches;
+    this.onMotion = e => { this.reduced = e.matches; };
+    this.motionQuery.addEventListener('change', this.onMotion);
+    this.onPointer = e => {
+      const r = canvas.getBoundingClientRect();
+      this.pointer.x = Math.max(-1, Math.min(1, (e.clientX - r.left) / r.width * 2 - 1));
+      this.pointer.y = Math.max(-1, Math.min(1, (e.clientY - r.top) / r.height * 2 - 1));
+      this.pointerInside = true;
+    };
+    this.onLeave = () => { this.pointerInside = false; this.pointer.x = 0; this.pointer.y = 0; };
+    this.onClick = e => { this.onPointer(e); this.play(this.options.followPointer ? 'flap' : 'wave'); };
+    this.onKey = e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); this.play('wave'); }
+    };
+    canvas.addEventListener('pointermove', this.onPointer);
+    canvas.addEventListener('pointerleave', this.onLeave);
+    canvas.addEventListener('pointerdown', this.onClick);
+    canvas.addEventListener('keydown', this.onKey);
+    this.resizeObserver = new ResizeObserver(() => this.resize());
+    this.resizeObserver.observe(canvas);
+    this.stars = Array.from({ length: 55 }, (_, i) => ({
+      x: ((i * 173 + 29) % 997) / 997,
+      y: ((i * 97 + 11) % 499) / 499 * .7,
+      size: i % 7 === 0 ? 2 : 1,
+      phase: i * 2.1,
+    }));
+    this.tick = stamp => {
+      if (this.destroyed) return;
+      const dt = this.lastTime ? Math.min(stamp - this.lastTime, 64) : 0;
+      this.lastTime = stamp;
+      if (!this.paused) this.update(dt);
+      this.draw();
+      this.raf = requestAnimationFrame(this.tick);
+    };
+    this.resize();
+    this.loadPromise = this.load();
+    this.raf = requestAnimationFrame(this.tick);
+  }
+
+  async load() {
+    const sources = {
+      idle: 'assets/sprites/reposo.png', blink: 'assets/sprites/parpadeo.png',
+      wave: 'assets/sprites/saludo.png', flap: 'assets/sprites/aleteo.png',
+      forest: 'assets/backgrounds/bosque-luna.webp',
+      foreground: 'assets/backgrounds/paisaje-inferior.webp',
+      desk: 'assets/backgrounds/escritorio.webp',
+    };
+    await Promise.all(Object.entries(sources).map(async ([key, path]) => {
+      const img = new Image();
+      await new Promise((resolve, reject) => {
+        img.onload = resolve; img.onerror = () => reject(new Error(`No se pudo cargar ${path}`));
+        img.src = this.options.sources?.[key] || `${this.options.baseUrl.replace(/\/$/, '')}/${path}`;
+      });
+      if (!this.destroyed) this.assets[key] = img;
+    }));
+    if (this.destroyed) return;
+    this.ready = true;
+    this.options.onReady?.();
+  }
+
+  resize() {
+    const r = this.canvas.getBoundingClientRect();
+    this.width = Math.max(1, r.width); this.height = Math.max(1, r.height);
+    const dpr = Math.min(devicePixelRatio || 1, 2);
+    this.canvas.width = Math.round(this.width * dpr);
+    this.canvas.height = Math.round(this.height * dpr);
+    this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  play(action) {
+    if (!['idle', 'blink', 'wave', 'flap', 'jump', 'celebrate'].includes(action)) {
+      throw new Error(`Acción desconocida: ${action}`);
+    }
+    this.action = action; this.elapsed = 0;
+    this.options.onAction?.(action);
+    return this;
+  }
+
+  pause(value = true) { this.paused = value; return this; }
+  setOptions(options) { Object.assign(this.options, options); return this; }
+
+  update(dt) {
+    if (!this.ready) return;
+    const scaled = dt * Math.max(.25, Math.min(3, this.options.speed));
+    this.time += scaled;
+    const weight = 1 - Math.exp(-dt / 150);
+    const tx = this.reduced ? 0 : this.pointer.x;
+    const ty = this.reduced ? 0 : this.pointer.y;
+    this.smooth.x += (tx - this.smooth.x) * weight;
+    this.smooth.y += (ty - this.smooth.y) * weight;
+    if (this.action !== 'idle') {
+      this.elapsed += scaled;
+      const state = OWL_ANIMATIONS[this.action];
+      const duration = state ? state.durations.reduce((a, b) => a + b, 0)
+        : this.action === 'jump' ? 780 : 1800;
+      if (this.elapsed >= duration) {
+        const ended = this.action;
+        this.play('idle'); this.nextBlink = this.time + 2300;
+        this.options.onEnd?.(ended);
+      }
+    } else if (this.options.automatic && !this.reduced) {
+      if (this.time >= this.nextWave) {
+        this.nextWave = this.time + 16000; this.play('wave');
+      } else if (this.time >= this.nextBlink) {
+        this.nextBlink = this.time + 3200; this.play('blink');
+      }
+    }
+  }
+
+  frameAt(action, elapsed) {
+    const def = OWL_ANIMATIONS[action];
+    if (!def) return 0;
+    let remaining = elapsed;
+    for (let i = 0; i < def.durations.length; i++) {
+      if (remaining < def.durations[i]) return i;
+      remaining -= def.durations[i];
+    }
+    return 5;
+  }
+
+  draw() {
+    const c = this.ctx, w = this.width, h = this.height;
+    c.clearRect(0, 0, w, h);
+    const g = c.createLinearGradient(0, 0, 0, h);
+    g.addColorStop(0, '#090d1b'); g.addColorStop(.65, '#11122e'); g.addColorStop(1, '#090c16');
+    c.fillStyle = g; c.fillRect(0, 0, w, h);
+    const moving = !this.reduced;
+    const px = this.options.parallax && moving ? this.smooth.x : 0;
+    const py = this.options.parallax && moving ? this.smooth.y : 0;
+    const glow = c.createRadialGradient(w * .52, h * .42, 10, w * .52, h * .42, w * .52);
+    glow.addColorStop(0, '#5725a927'); glow.addColorStop(1, '#5725a900');
+    c.fillStyle = glow; c.fillRect(0, 0, w, h);
+    for (const s of this.stars) {
+      c.globalAlpha = moving ? .35 + .45 * (.5 + .5 * Math.sin(this.time / 1400 + s.phase)) : .65;
+      c.fillStyle = s.size === 2 ? '#d89bff' : '#c8e5ff';
+      const x = s.x * w - px * 5, y = s.y * h - py * 4;
+      c.fillRect(Math.round(x), Math.round(y), s.size, s.size);
+      if (s.size === 2) { c.fillRect(Math.round(x - 2), Math.round(y + .5), 6, 1); }
+    }
+    c.globalAlpha = 1;
+    if (!this.ready) {
+      c.font = '14px monospace'; c.fillStyle = '#a9aac1';
+      c.textAlign = 'center'; c.fillText('Preparando el escenario…', w / 2, h / 2); return;
+    }
+    const background = this.options.background === 'desk' ? this.assets.desk : this.assets.forest;
+    const bw = this.options.background === 'desk' ? Math.min(w * .86, 770) : Math.max(w * .86, 600);
+    const bh = bw * background.height / background.width;
+    c.globalAlpha = this.options.background === 'desk' ? .85 : .76;
+    c.drawImage(background, w - bw + 30 - px * 12, h - bh + 25 - py * 6, bw, bh);
+    c.globalAlpha = 1;
+    const foreground = this.assets.foreground;
+    const fw = Math.max(w + 80, 780), fh = fw * foreground.height / foreground.width;
+    c.drawImage(foreground, (w - fw) / 2 - px * 22, h - fh + 35 - py * 9, fw, fh);
+    const size = Math.min(this.options.size, w * .51, h * .60);
+    const follow = this.options.followPointer && this.pointerInside && moving;
+    const x = w * .37 + (follow ? this.smooth.x * Math.max(0, w * .31 - size * .18) : px * 9);
+    const y = h * .72 + (follow ? this.smooth.y * h * .21 : 0);
+    let action = this.action, elapsed = this.elapsed;
+    let jump = 0, turn = moving ? this.smooth.x * .065 : 0;
+    if (action === 'jump') {
+      jump = moving ? Math.sin(Math.min(elapsed / 780, 1) * Math.PI) * 64 : 0; action = 'idle';
+    } else if (action === 'celebrate') {
+      action = 'flap'; elapsed %= 580;
+      if (moving) { jump = Math.abs(Math.sin(this.elapsed / 230)) * 22; turn += Math.sin(this.elapsed / 100) * .06; }
+    }
+    const frame = this.reduced ? 0 : this.frameAt(action, elapsed);
+    const atlas = this.assets[action] || this.assets.idle;
+    const bob = moving && this.action === 'idle' ? Math.sin(this.time / 750) * 2.3 : 0;
+    c.save(); c.translate(x, y - jump + bob); c.rotate(turn);
+    c.imageSmoothingEnabled = true;
+    c.drawImage(atlas, atlas === this.assets.idle ? 0 : frame * 256, 0, 256, 256, -size / 2, -size * .89, size, size);
+    c.restore();
+    if (this.action === 'celebrate' && moving) {
+      for (let i = 0; i < 16; i++) {
+        const t = ((this.elapsed + i * 71) % 1000) / 1000;
+        const angle = i * 2.4;
+        c.globalAlpha = 1 - t; c.fillStyle = i % 2 ? '#00e5ed' : '#e58af6';
+        c.fillRect(x + Math.cos(angle) * t * 125, y - size * .55 + Math.sin(angle) * t * 85 - t * 30, 3, 3);
+      }
+      c.globalAlpha = 1;
+    }
+  }
+
+  destroy() {
+    this.destroyed = true; cancelAnimationFrame(this.raf);
+    this.resizeObserver.disconnect();
+    this.motionQuery.removeEventListener('change', this.onMotion);
+    this.canvas.removeEventListener('pointermove', this.onPointer);
+    this.canvas.removeEventListener('pointerleave', this.onLeave);
+    this.canvas.removeEventListener('pointerdown', this.onClick);
+    this.canvas.removeEventListener('keydown', this.onKey);
+  }
+}
+
+const labels={idle:'En reposo',blink:'Parpadeando',wave:'Saludando',flap:'Aleteando',jump:'Saltando',celebrate:'Celebrando'};
+const buttons=[...document.querySelectorAll('[data-action]')];
+const state=document.querySelector('#state');
+const player=new OwlPlayer(document.querySelector('#stage'),{
+  sources:{"idle": "assets/sprites/reposo.png", "blink": "assets/sprites/parpadeo.png", "wave": "assets/sprites/saludo.png", "flap": "assets/sprites/aleteo.png", "forest": "assets/backgrounds/bosque-luna.webp", "foreground": "assets/backgrounds/paisaje-inferior.webp", "desk": "assets/backgrounds/escritorio.webp"},
+  onReady(){buttons.forEach(b=>b.disabled=false);document.querySelector('#pause').disabled=false;state.textContent='En reposo';},
+  onAction(action){state.textContent=labels[action];buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.action===action)));}
+});
+window.owlDemo=player;
+player.loadPromise.catch(error=>{const el=document.querySelector('#error');el.textContent=error.message;el.classList.remove('hidden');state.textContent='Error al cargar';});
+function resume(){player.pause(false);document.querySelector('#pause').setAttribute('aria-pressed','false');document.querySelector('#pause').textContent='Ⅱ Pausar';}
+buttons.forEach(b=>b.addEventListener('click',()=>{resume();player.play(b.dataset.action);}));
+document.querySelector('#follow').addEventListener('change',e=>{player.setOptions({followPointer:e.target.checked});document.querySelector('#instruction').textContent=e.target.checked?'El búho sigue el puntero dentro del escenario.':'Mueve el puntero para inclinar el búho.';});
+document.querySelector('#depth').addEventListener('change',e=>player.setOptions({parallax:e.target.checked}));
+document.querySelector('#auto').addEventListener('change',e=>player.setOptions({automatic:e.target.checked}));
+document.querySelector('#speed').addEventListener('input',e=>{player.setOptions({speed:Number(e.target.value)});document.querySelector('#speed-value').value=Number(e.target.value).toFixed(1)+'×';});
+document.querySelector('#pause').addEventListener('click',e=>{player.pause(!player.paused);e.currentTarget.setAttribute('aria-pressed',String(player.paused));e.currentTarget.textContent=player.paused?'▷ Continuar':'Ⅱ Pausar';state.textContent=player.paused?'En pausa':labels[player.action];});
+document.querySelectorAll('[data-background]').forEach(b=>b.addEventListener('click',()=>{player.setOptions({background:b.dataset.background});document.querySelectorAll('[data-background]').forEach(t=>t.setAttribute('aria-pressed',String(t===b)));document.querySelector('#scene-label').textContent=b.dataset.background==='night'?'escenario / bosque nocturno':'escenario / escritorio';}));
+if(player.reduced){document.querySelector('#reduced').classList.remove('hidden');document.querySelectorAll('.card img').forEach(img=>img.src=player.options.sources.idle);}
+addEventListener('pagehide',()=>player.destroy(),{once:true});
+</script></body></html>
