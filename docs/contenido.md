@@ -3,8 +3,9 @@
 Fuente de textos del sitio. Lo que está entre comillas se copia **literal** al código: no se
 reescribe al implementar.
 
-Estado: textos de interfaz copiados del diseño de referencia (`../exampleDesing/`), datos
-personales tomados del CV de Luis y del repositorio `pazos-dev/System-Tech` (5/11/2026).
+Estado: textos de interfaz copiados del diseño de referencia (`../exampleDesing/`) y datos
+personales tomados del CV de Luis (5/11/2026). Las fichas de proyecto están en
+[`docs/proyectos.md`](proyectos.md).
 
 Marcas de este documento:
 
@@ -108,30 +109,11 @@ Textos de interfaz (literales del diseño):
 | Botón de código | `Código` |
 | Etiqueta de muestra | `Contenido de muestra` (se quita al publicar) |
 
-### Proyecto 01 — System-Tech
+### Fichas de proyecto
 
-- **Estado:** en desarrollo, versión `0.19.1`; repositorio **privado**.
-- **Tipo:** `Aplicación web`
-- **Qué es:** sistema de gestión para un taller de reparación de celulares: ingreso de equipos,
-  estado de las reparaciones y catálogo, con API y panel web.
-- **El reto (borrador, confirmar):** sacar el taller de las planillas y los mensajes sueltos, y que
-  cada reparación tenga un estado consultable por quien la atiende.
-- **Mi aporte (borrador, confirmar):** arquitectura del monorepo, modelo de datos en PostgreSQL,
-  API, panel y las reglas de negocio del taller.
-- **Tecnologías (tomadas del repositorio):**
-  - API: NestJS · PostgreSQL · Kysely · Zod · pino · bcrypt · rate limiting · Vitest
-  - Panel: Astro · React 19 · Ant Design · TanStack Query · Zustand · React Hook Form · Zod ·
-    Recharts · dnd-kit · Playwright · Vitest
-  - Infraestructura: pnpm workspaces + Turborepo · Docker y docker-compose · migraciones · backup
-    y restore
-- **Capturas:** `PENDIENTE`
-- **Enlaces:** demo → `PENDIENTE` URL. Decisión (5/11/2026): el repositorio sigue privado y el
-  botón `Código` no se muestra; en su lugar va la demo cuando esté desplegada.
-
-### Proyectos 02 y 03
-
-No se publican. Decisión (5/11/2026): la sección muestra **un solo proyecto real**, System-Tech;
-los puestos del CV no se usan como relleno. Cuando haya más proyectos reales se suman acá.
+Los datos de los proyectos viven aparte, en `docs/proyectos.md`: un proyecto real (System-Tech) y
+cinco registros de muestra para construir la interfaz. Este documento conserva solo los textos de
+interfaz de la sección.
 
 ## 4. Archivo de proyectos
 
@@ -195,8 +177,8 @@ estados de éxito y error.
 
 ## 7. Pendientes antes de publicar
 
-- [ ] Capturas reales de System-Tech.
-- [ ] URL de la demo de System-Tech.
+- [ ] Reemplazar los cinco proyectos de muestra de `docs/proyectos.md` por reales.
+- [ ] Capturas reales y URL de la demo de System-Tech.
 - [ ] Confirmar el texto de `El reto` y `Mi aporte` de System-Tech (hoy es borrador).
 - [ ] Título y descripción para buscadores de cada página.
 - [ ] Quitar las etiquetas de maqueta: `Contenido de muestra`, `Ejemplos visuales`,
