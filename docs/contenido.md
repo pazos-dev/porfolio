@@ -5,7 +5,7 @@ reescribe al implementar.
 
 Estado: textos de interfaz copiados del diseño de referencia (`../exampleDesing/`) y datos
 personales tomados del CV de Luis (5/11/2026). Las fichas de proyecto están en
-[`docs/proyectos.md`](proyectos.md).
+[`docs/proyectos/`](proyectos/README.md).
 
 Marcas de este documento:
 
@@ -111,9 +111,9 @@ Textos de interfaz (literales del diseño):
 
 ### Fichas de proyecto
 
-Los datos de los proyectos viven aparte, en `docs/proyectos.md`: un proyecto real (System-Tech) y
-cinco registros de muestra para construir la interfaz. Este documento conserva solo los textos de
-interfaz de la sección.
+Los datos de los proyectos viven aparte, en [`docs/proyectos/`](proyectos/README.md): un archivo por
+proyecto, con un registro real (System-Tech) y cinco de muestra para construir la interfaz. Este
+documento conserva solo los textos de interfaz de la sección.
 
 ## 4. Archivo de proyectos
 
@@ -177,7 +177,7 @@ estados de éxito y error.
 
 ## 7. Pendientes antes de publicar
 
-- [ ] Reemplazar los cinco proyectos de muestra de `docs/proyectos.md` por reales.
+- [ ] Reemplazar los cinco proyectos de muestra de `docs/proyectos/` por reales.
 - [ ] Capturas reales y URL de la demo de System-Tech.
 - [ ] Confirmar el texto de `El reto` y `Mi aporte` de System-Tech (hoy es borrador).
 - [ ] Título y descripción para buscadores de cada página.
