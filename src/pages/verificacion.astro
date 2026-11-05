@@ -1,0 +1,83 @@
+---
+/**
+ * Página de verificación del andamiaje.
+ * Comprueba que Astro + React + Tailwind compilan y que los assets
+ * están en las rutas públicas que espera el código.
+ * Reemplazar por la portada real (ver docs/plan-desarrollo.md).
+ */
+import { OwlMascot } from '../features/mascot/react/OwlMascot';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio · verificación</title>
+    <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicons/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <meta name="theme-color" content="#00e5ed" />
+  </head>
+  <body class="min-h-dvh bg-base text-ink">
+    <main class="mx-auto flex max-w-3xl flex-col gap-8 p-6">
+      <h1 class="text-accent-cyan text-2xl font-semibold">Andamiaje del portfolio</h1>
+      <p class="text-sm opacity-70">
+        Si ves el búho animado y los recursos debajo, Astro, React, Tailwind y las rutas públicas
+        están en orden.
+      </p>
+
+      <OwlMascot client:load baseUrl="/buho" background="night" />
+
+      <section class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <img src="/images/buho.webp" alt="Búho del portfolio" class="pixel-image w-full" />
+        <img
+          src="/images/escritorio.webp"
+          alt="Escritorio del portfolio"
+          class="pixel-image w-full"
+        />
+        <img
+          src="/images/paisaje-inferior.webp"
+          alt="Paisaje inferior"
+          class="pixel-image w-full"
+        />
+      </section>
+
+      <section class="flex items-center gap-4">
+        <img src="/svg/logo-mark.svg" alt="Marca de Luis Pazos" width="64" height="60" />
+        <img src="/svg/logo-horizontal.svg" alt="Luis Pazos" height="40" />
+      </section>
+
+      <section class="flex items-center gap-4">
+        <p class="text-sm opacity-70">GSAP:</p>
+        <div data-motion-demo class="bg-accent-purple size-12"></div>
+      </section>
+    </main>
+
+    <script>
+      import { gsap, REDUCED_MOTION_QUERY } from '../motion/gsap';
+
+      const box = document.querySelector('[data-motion-demo]');
+
+      if (box) {
+        const media = gsap.matchMedia();
+
+        media.add(
+          {
+            animate: '(prefers-reduced-motion: no-preference)',
+            reduce: REDUCED_MOTION_QUERY,
+          },
+          (context) => {
+            if (context.conditions?.reduce) {
+              return;
+            }
+
+            gsap.from(box, { autoAlpha: 0, x: -24 });
+          },
+        );
+      }
+    </script>
+  </body>
+</html>

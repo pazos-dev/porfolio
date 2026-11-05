@@ -1,0 +1,30 @@
+---
+// Ilustración de fondo de la portada: ocupa la mitad derecha y se mueve con
+// paralaje. Es decorativa, el texto de la portada va por encima.
+---
+
+<div
+  aria-hidden="true"
+  class="pointer-events-none absolute inset-y-0 right-0 hidden w-[56%] overflow-hidden lg:block"
+>
+  <img
+    data-hero-layer
+    src="/images/escritorio.webp"
+    alt=""
+    width="900"
+    height="700"
+    class="pixel-image h-full w-full scale-105 object-cover object-center will-change-transform"
+    fetchpriority="high"
+  />
+  <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-base to-transparent"></div>
+</div>
+
+<script>
+  import { initHeroParallax } from './hero-parallax';
+
+  const layer = document.querySelector('[data-hero-layer]');
+
+  if (layer instanceof HTMLElement) {
+    initHeroParallax(layer);
+  }
+</script>

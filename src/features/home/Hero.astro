@@ -1,0 +1,47 @@
+---
+const [primary, secondary] = [
+  { href: '#proyectos', label: 'Ver proyectos', icon: '/svg/icons/folder.svg' },
+  { href: '#contacto', label: 'Hablemos', icon: '/svg/icons/chat.svg' },
+];
+---
+
+<div class="max-w-[34rem]">
+  <p class="flex items-center gap-2 text-sm text-ink/80">
+    <img src="/svg/decoraciones/estrella-pixel.svg" alt="" width="16" height="16" />
+    Código, ideas y algo de pixel art.
+  </p>
+
+  <h1 class="mt-4 font-display leading-[0.95] tracking-tight">
+    <span class="block text-[clamp(2.5rem,6vw,4.75rem)] text-ink">Hola, soy</span>
+    <span class="block text-[clamp(2.5rem,6vw,4.75rem)] text-ink">
+      Luis Pazos.
+      <span
+        aria-hidden="true"
+        class="ml-1 inline-block h-[0.8em] w-[0.16em] bg-accent-purple align-middle"
+      ></span>
+    </span>
+    <span class="mt-1 block text-[clamp(2rem,4.6vw,3.5rem)] text-accent-cyan">
+      Ing. de software.
+    </span>
+  </h1>
+
+  <p class="mt-6 text-base leading-relaxed text-ink/90">
+    Creo webs y aplicaciones para que <span class="font-bold text-accent-cyan">tu negocio</span> se
+    vea bien y funcione mejor. Combino <span class="font-bold text-accent-pink">diseño</span> y
+    desarrollo para que
+    <span class="font-bold text-accent-cyan">tus clientes</span> encuentren lo que necesitan y vos
+    puedas enfocarte en lo que hacés.
+  </p>
+
+  <div class="mt-8 flex flex-wrap gap-4">
+    <a class="pixel-button border-accent-cyan bg-accent-cyan text-base" href={primary.href}>
+      <img src={primary.icon} alt="" width="20" height="20" />
+      {primary.label}
+      <img src="/svg/icons/arrow-up-right.svg" alt="" width="16" height="16" />
+    </a>
+    <a class="pixel-button border-accent-purple text-ink" href={secondary.href}>
+      <img src={secondary.icon} alt="" width="20" height="20" />
+      {secondary.label}
+    </a>
+  </div>
+</div>

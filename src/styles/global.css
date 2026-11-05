@@ -6,6 +6,9 @@
  * Mantener una sola fuente: no repetir estos hex en componentes.
  */
 @theme {
+  --font-display: 'Pixelify Sans', ui-monospace, monospace;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
   --color-base: #080d10;
   --color-ink: #f4f4ef;
   --color-accent-cyan: #00e5ed;
@@ -44,5 +47,43 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  /* La ilustración pixel art no se interpola ni se suaviza. */
+  .pixel-image {
+    image-rendering: pixelated;
+  }
+
+  /* Botón del diseño: rectángulo, borde de 2px y sombra dura desplazada. */
+  .pixel-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid currentColor;
+    box-shadow: 4px 4px 0 0 currentColor;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    line-height: 1;
+    transition:
+      transform 120ms ease-out,
+      box-shadow 120ms ease-out;
+  }
+
+  .pixel-button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 0 currentColor;
+  }
+
+  .pixel-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 0 currentColor;
+  }
+
+  .pixel-button:focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
   }
 }

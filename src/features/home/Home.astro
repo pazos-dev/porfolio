@@ -1,0 +1,23 @@
+---
+import Hero from './Hero.astro';
+import HeroBackground from './HeroBackground.astro';
+import HeroScenery from './HeroScenery.astro';
+---
+
+<section class="relative mx-auto w-full max-w-[1440px] px-6 pt-8 pb-4 lg:flex lg:h-[calc(100svh-21rem)] lg:items-center lg:pt-0 lg:pr-0 lg:pb-0 lg:pl-8">
+  <div class="relative z-10 lg:w-[44%]">
+    <Hero />
+  </div>
+
+  <HeroBackground />
+
+  <img
+    src="/images/escritorio.webp"
+    alt="Escritorio de noche frente a una ventana con la ciudad iluminada"
+    width="900"
+    height="700"
+    class="pixel-image mt-8 w-full lg:hidden"
+  />
+</section>
+
+<HeroScenery />

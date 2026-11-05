@@ -1,0 +1,42 @@
+---
+const nav = [
+  { href: '/#proyectos', label: 'Proyectos' },
+  { href: '/#sobre-mi', label: 'Sobre mí' },
+  { href: '/#contacto', label: 'Contacto' },
+];
+---
+
+<header class="border-b-2 border-accent-purple">
+  <div class="mx-auto flex w-full max-w-[1440px] flex-wrap items-center gap-6 px-6 py-4">
+    <a href="/" class="flex items-center gap-3 text-ink no-underline">
+      <img src="/svg/decoraciones/pluma.svg" alt="" width="34" height="34" class="pixel-image" />
+      <span class="font-display text-2xl tracking-wide">&#123;Luis Pazos&#125;</span>
+    </a>
+
+    <p class="flex items-center gap-2 text-xs tracking-[0.2em] text-accent-purple uppercase">
+      <span aria-hidden="true" class="inline-block size-3 bg-accent-cyan"></span>
+      Disponible
+    </p>
+
+    <nav aria-label="Secciones" class="ml-auto">
+      <ul class="flex items-center gap-2 text-sm">
+        <li aria-hidden="true" class="text-accent-purple">
+          [
+        </li>
+        {nav.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              class="px-1 text-ink no-underline hover:text-accent-cyan focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-cyan"
+            >
+              [{item.label}]
+            </a>
+          </li>
+        ))}
+        <li aria-hidden="true" class="text-accent-purple">
+          ]
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
